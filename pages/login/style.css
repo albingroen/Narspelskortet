@@ -1,0 +1,123 @@
+body {
+  background: #23bba6 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wrapper .back {
+  color: white;
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+}
+.wrapper .back:hover {
+  border: 1px solid white;
+}
+@media (max-width: 1000px) {
+  .wrapper .back {
+    display: none;
+  }
+}
+.wrapper .modal {
+  height: 500px;
+  width: 850px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3.5px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1000px) {
+  .wrapper .modal {
+    width: 100%;
+  }
+}
+.wrapper .modal .modal-left {
+  background-image: url("../../images/putting-1.jpg");
+  background-position: right;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+}
+@media (max-width: 1000px) {
+  .wrapper .modal .modal-left {
+    display: none;
+  }
+}
+.wrapper .modal .modal-right {
+  padding: 50px;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .wrapper .modal .modal-right {
+    width: calc(100% - 100px);
+  }
+}
+.wrapper .modal .modal-right form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+}
+.wrapper .modal .modal-right form input {
+  padding: 12px;
+  display: block;
+  border: none;
+  background: #e3e8eb;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 15px;
+  color: #444;
+}
+.wrapper .modal .modal-right form input::placeholder {
+  opacity: 0.5;
+}
+.wrapper .modal .modal-right form input:focus {
+  outline: none;
+}
+/* @media (max-width: 1000px) {
+  .wrapper .modal .modal-right form input {
+    width: calc(100% - 24px;);
+  }
+} */
+.wrapper .modal .modal-right form .error {
+  color: #eb6868;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 15px;
+}
+.wrapper .modal .modal-right form button {
+  padding: 10px;
+  border: none;
+  background: #27bba6;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  margin-top: 80px;
+  width: 140px;
+}
+.wrapper .modal .modal-right form button:focus {
+  outline: none;
+}
+.primary-font {
+  font-weight: 700 !important;
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+}

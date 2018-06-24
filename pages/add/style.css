@@ -1,0 +1,76 @@
+body {
+  background: #f5f5f5;
+  height: 100vh;
+}
+
+body .header {
+  padding-bottom: 50px;
+}
+
+body .header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+body .header p {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.5;
+}
+
+body .card {
+  width: calc(100% - 80px);
+  background: white;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+@media (max-width: 600px) {
+  body .card {
+    width: calc(100% - 80px);
+  }
+}
+
+body .card form {
+  display: flex;
+  flex-direction: column;
+}
+
+body .card form input {
+  padding: 12px;
+  display: block;
+  border: none;
+  background: #ecedee;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 15px;
+  color: #444;
+}
+
+body .card form input::placeholder {
+  opacity: 0.5;
+}
+
+body .card form input:focus {
+  outline: none;
+}
+
+body .card form button {
+  padding: 10px;
+  border: none;
+  background: #27bba6;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  margin-top: 80px;
+  width: 200px;
+}
+
+body .card form button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

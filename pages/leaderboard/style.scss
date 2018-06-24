@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  border-radius: 5px;
+  background: white;
+  padding: 20px;
+  min-height: 300px;
+
+  .card {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 10px 15px 10px;
+    border-bottom: 1px dashed #d5d5d5;
+    transition: 0.2s ease-out 0s;
+
+    &:hover {
+      background: rgba(30, 143, 255, 0.068);
+      transition: 0.2s ease-out 0s;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      color: #333;
+    }
+  }
+}

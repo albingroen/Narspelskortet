@@ -1,0 +1,95 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .page-container {
+    flex-direction: column;
+  }
+}
+
+.page-container .content-wrapper {
+  width: calc(100% - 310px);
+  margin-left: 250px;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 800px) {
+  .page-container .content-wrapper {
+    margin-left: 0px;
+    width: calc(100% - 60px);
+    margin-top: 50px !important;
+    overflow-y: scroll;
+    position: fixed;
+  }
+}
+
+.page-container .content-wrapper .content {
+  max-width: 1200px;
+  padding-top: 50px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.page-container .content-wrapper .content .header {
+  padding-bottom: 50px;
+}
+
+.page-container .content-wrapper .content .header h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.page-container .content-wrapper .content .header p {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.5;
+}
+
+.page-container .content-wrapper .content .avarage-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page-container .content-wrapper .content .avarage-cards .card {
+  background: white;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.page-container .content-wrapper .content .avarage-cards .card--small {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.page-container .content-wrapper .content .avarage-cards .card h3 {
+  font-weight: 400;
+  font-size: 17.5px;
+  opacity: 0.5;
+}
+
+.page-container .content-wrapper .content .avarage-cards .card h1 {
+  font-weight: 400;
+  font-size: 35px;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=main.css.map */
